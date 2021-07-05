@@ -6,3 +6,14 @@
 ↳ DWORD to Create: LastActiveClick -- Set to 1
 
 Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
+Get-AppxPackage -allusers *windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsalarms* | Remove-AppxPackage
+Get-AppxPackage -allusers *officehub* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunemusic* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsmaps* | Remove-AppxPackage
+Get-AppxPackage -allusers *Messaging* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingfinance* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunevideo* | Remove-AppxPackage
+Get-AppxPackage -allusers *people* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsphone* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingweather* | Remove-AppxPackage
