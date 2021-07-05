@@ -2,4 +2,7 @@
 ↳ DWORD to Create: BingSearchEnabled  -- Set to 0
 ↳ DWORD to Create: CortanaConsent  --  Set to 0
 
+• Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+↳ DWORD to Create: LastActiveClick -- Set to 1
+
 Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
