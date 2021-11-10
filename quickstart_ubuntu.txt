@@ -49,9 +49,9 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-contrib postgresql-client-12 postgis postgresql-12-postgis-3 postgresql-12-postgis-3-scripts
+sudo -u postgres createuser -s -d -r snehaselect with encrypted password 'snehaselect';
 sudo -i -u postgres psql
 create database snehaselect;
-create user snehaselect with encrypted password 'snehaselect';
 grant all privileges on database snehaselect to snehaselect;
 alter database snehaselect owner to snehaselect;
 \q
