@@ -53,6 +53,7 @@ sudo -i -u postgres psql
 create database snehaselect;
 create user snehaselect with encrypted password 'snehaselect';
 grant all privileges on database snehaselect to snehaselect;
+alter database snehaselect owner to snehaselect;
 \q
 psql -d snehaselect
 CREATE EXTENSION postgis;
