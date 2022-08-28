@@ -1,6 +1,6 @@
 ####### Init #######
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoclean && sudo apt-get autoremove && sudo apt autopurge
-sudo apt-get install chrome-gnome-shell gnome-tweaks -y
+sudo apt-get install chrome-gnome-shell gnome-tweaks gnome-shell-extensions -y
 sudo apt-get install preload
 sudo apt install tlp tlp-rdw
 sudo tlp start
